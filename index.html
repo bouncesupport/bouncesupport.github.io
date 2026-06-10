@@ -4,23 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bitwise Games</title>
+    <!-- Guaranteed sharp monospace font matching your app's font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap" rel="stylesheet">
+
     <style>
         body { 
-            font-family: Arial, sans-serif; 
+            font-family: 'JetBrains Mono', monospace;
             text-align: center; 
-            padding: 50px 20px; 
-            background-color: #1B5E20; /* Matches your app's menu! */
+            padding: 50px 20px; /* Overall body padding */
+            background-color: #1B5E20; /* Dark green background */
             color: white; 
+            margin: 0;
         }
+        
+        /* New styling for the icon */
+        .app-icon {
+            display: block;
+            margin: 0 auto 30px auto; /* Centers icon, adds 30px spacing below it to shift the box lower */
+            width: 120px; /* Recommended prominent size */
+            height: 120px;
+            border-radius: 28px; /* Standard smooth 'squircle' radius for app icons */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+        }
+
         .container { 
             max-width: 600px; 
             margin: 0 auto; 
-            background: #2E7D32; 
+            background: #2E7D32; /* Lighter green center box */
             padding: 40px; 
             border-radius: 12px; 
             box-shadow: 0 4px 15px rgba(0,0,0,0.3); 
         }
-        h1 { color: #FFFFEB3B; font-weight: 900; letter-spacing: 1px; }
+        h1 { color: #FFFFEB3B; font-weight: 800; letter-spacing: 1px; margin-top: 0; }
         p { line-height: 1.6; }
         .links { margin-top: 30px; }
         a { 
@@ -34,6 +51,11 @@
     </style>
 </head>
 <body>
+
+    <!-- !!! ADDED ICON ABOVE THE BOX !!! -->
+    <!-- Assumes file 'app_icon.png' is in your repo -->
+    <img src="app_icon.png" alt="Bounce Momentum Icon" class="app-icon">
+
     <div class="container">
         <h1>BITWISE GAMES</h1>
         <p>Welcome to the official developer page for <strong>Bounce Momentum: Reflex Arcade</strong>.</p>
